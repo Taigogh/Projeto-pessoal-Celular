@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+main{/*BLOCO DO POSICIONAMENTO (PLANO DE FUNDO) */
+    height: 100vh;
+    position: relative;
+}
+
+body{
+    background: url('imagens/piano-fundo.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;  
+}
+
+section#Cell{/*BLOCO DO POSICIONAMENTO CENTRAL DA TELA*/
+    background: url('imagens/celular-frame.png') no-repeat;
+    height: 800px;
+    width: 365px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+iframe#tela{
+    position: relative;
+    top: 18px;
+    left: 15px;
+    width: 335px;
+    height: 745px;
+    border-radius: 32px;
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;/*COMANDO PARA ARRENDONDAR UM BOTÃO*/
+    box-shadow: 2px 2px 5px rgba(255, 255, 0, 0.329);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(230, 255, 1, 0.384);
+    transform: translate(-2px, -2px);
+     /*COD PARA DESTACAR BOTÃO AO PASSAR O MOUSE*/
+     box-shadow: 5px 5px 10px rgba(238, 255, 1, 0.397);
+     transition: transform 0.5s, border 1s;
+}
