@@ -30,6 +30,8 @@ section#Cell{/*BLOCO DO POSICIONAMENTO CENTRAL DA TELA*/
     height: 800px;
     width: 365px;
 
+    background-attachment: fixed;
+
     position: absolute;
     top: 50%;
     left: 50%;
